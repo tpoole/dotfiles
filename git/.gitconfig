@@ -1,0 +1,19 @@
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	hist = log --graph --decorate --abbrev-commit --all --color --pretty=oneline
+	hist2 = log --graph --decorate --abbrev-commit --all --color --date=short --pretty=format:\"%C(auto)%h%d %C(magenta)[%cd]%Creset %s\"
+	hist3 = log --graph --decorate --abbrev-commit --all --color --stat --pretty=medium
+	type = cat-file -t
+	dump = cat-file -p
+
+[color]
+	ui = true
+
+[push]
+	default = simple
+
+[user]
+	name = tpoole
+
