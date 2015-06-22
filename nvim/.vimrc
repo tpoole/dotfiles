@@ -3,9 +3,9 @@ filetype plugin indent on
 syntax enable
 
 " Make this rc file useable in isolation
-if filereadable(expand("~/.nvim/autoload/plug.vim"))
+if filereadable(expand("~/.vim/autoload/plug.vim"))
 
-    call plug#begin('~/.nvim/plugged')
+    call plug#begin('~/.vim/plugged')
 
     " Better status line
     Plug 'bling/vim-airline'
