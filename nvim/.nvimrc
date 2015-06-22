@@ -76,7 +76,10 @@ set history=1000
 " Give `%` more power
 runtime! macros/matchit.vim
 
-" Allow easy escaping from the terminal emulator
-tnoremap <Esc> <C-\><C-n>
-tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
+if has('nvim')
 
+    " Allow easy escaping from the terminal emulator
+    tnoremap <Esc> <C-\><C-n>
+    tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
+
+endif
