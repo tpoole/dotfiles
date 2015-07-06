@@ -53,13 +53,13 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" Use C-L to clear highlights
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
 " Wrapping
-" c : comments
-" q : format comments using `gq`.
-" r : insert comment leader
-" t : auto-wrap text
 set textwidth=79
-set formatoptions+=c,q,r,t
 
 " Show what we're doing
 set showcmd
