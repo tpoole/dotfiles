@@ -27,14 +27,7 @@ else
 
 endif
 
-" The standard diff colours are useless
-if &diff
-    highlight Normal ctermfg=White ctermbg=Black
-    highlight DiffAdd ctermbg=DarkGreen
-    highlight DiffDelete ctermbg=DarkRed
-    highlight DiffChange ctermbg=DarkBlue
-    highlight DiffText ctermfg=Black ctermbg=White
-endif
+colorscheme jellybeans
 
 " Indentation
 set tabstop=4
@@ -57,9 +50,6 @@ set smartcase
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
-
-" Wrapping
-set textwidth=79
 
 " Show what we're doing
 set showcmd
