@@ -31,7 +31,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " syntax groups that should not be touched by the indent process
-let s:syng_com = '\<tcl\%(Comment\|CommentBraces\|Todo\|Start\)\>'
+let s:syng_com = '\<tcl\%(CommentBraces\|Todo\|Start\)\>'
 " syntax groups that should be ignored by the indent process
 let s:syng_strcom = '\<tcl\%(Quotes\|Comment\|CommentBraces\|SemiColon\|Special\|Todo\|Start\)\>'
 " regexp that facilitates finding the correct mate to a brace, skipping comments, strings and such
