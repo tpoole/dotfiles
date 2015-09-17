@@ -29,6 +29,9 @@ endif
 
 colorscheme jellybeans
 
+" No mouse
+set mouse=
+
 " Indentation
 set tabstop=8
 set shiftwidth=4
