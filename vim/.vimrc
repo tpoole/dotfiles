@@ -19,6 +19,9 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     let g:syntastic_enable_signs=0
     let g:syntastic_tcl_nagelfar_args='-filter "*Unknown command \"::itcl::*"'
 
+    " Better python indenting
+    Plug 'hynek/vim-python-pep8-indent'
+
     call plug#end()
 
 else
