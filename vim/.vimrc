@@ -18,9 +18,15 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     let g:syntastic_python_checkers=['flake8']
     let g:syntastic_enable_signs=0
     let g:syntastic_tcl_nagelfar_args='-filter "*Unknown command \"::itcl::*"'
+    let g:syntastic_cpp_compiler = 'clang++'
+    let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
     " Better python indenting
     Plug 'hynek/vim-python-pep8-indent'
+
+    " C++ formatting
+    Plug 'rhysd/vim-clang-format'
+    let g:clang_format#code_style = 'llvm'
 
     call plug#end()
 
