@@ -11,6 +11,7 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     Plug 'bling/vim-airline'
     set noshowmode
     let g:airline#extensions#tabline#enabled=1
+    Plug 'vim-airline/vim-airline-themes'
     let g:airline_theme='raven'
 
     " Syntax checking
@@ -26,7 +27,7 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
 
     " C++ formatting
     Plug 'rhysd/vim-clang-format'
-    let g:clang_format#code_style = 'llvm'
+    let g:clang_format#code_style = 'google'
 
     call plug#end()
 
