@@ -10,15 +10,14 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     " Better status line
     Plug 'bling/vim-airline'
     set noshowmode
-    let g:airline#extensions#tabline#enabled=1
+    let g:airline#extensions#tabline#enabled = 1
     Plug 'vim-airline/vim-airline-themes'
-    let g:airline_theme='raven'
+    let g:airline_theme = 'raven'
 
     " Syntax checking
     Plug 'scrooloose/syntastic'
-    let g:syntastic_python_checkers=['flake8']
-    let g:syntastic_enable_signs=0
-    let g:syntastic_tcl_nagelfar_args='-filter "*Unknown command \"::itcl::*"'
+    let g:syntastic_python_checkers = ['flake8']
+    let g:syntastic_enable_signs = 0
     let g:syntastic_cpp_compiler = 'clang++'
     let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
@@ -28,6 +27,9 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     " C++ formatting
     Plug 'rhysd/vim-clang-format'
     let g:clang_format#code_style = 'google'
+
+    " Autocomplete
+    Plug 'Valloric/YouCompleteMe'
 
     call plug#end()
 
@@ -87,11 +89,3 @@ set history=1000
 
 " Give `%` more power
 runtime! macros/matchit.vim
-
-if has('nvim')
-
-    " Allow easy escaping from the terminal emulator
-    tnoremap <Esc> <C-\><C-n>
-    tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
-
-endif
