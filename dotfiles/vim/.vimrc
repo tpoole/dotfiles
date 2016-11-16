@@ -28,9 +28,6 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     Plug 'rhysd/vim-clang-format'
     let g:clang_format#code_style = 'google'
 
-    " Autocomplete
-    Plug 'Valloric/YouCompleteMe'
-
     call plug#end()
 
 else
