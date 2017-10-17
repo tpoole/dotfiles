@@ -13,6 +13,5 @@
     default = simple
 [user]
     name = tpoole
-    email = 872729+tpoole@users.noreply.github.com
 [pull]
     rebase = true
