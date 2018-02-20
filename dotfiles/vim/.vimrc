@@ -2,6 +2,8 @@ set nocompatible
 filetype plugin indent on
 syntax enable
 
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
 " Make this rc file useable in isolation
 if filereadable(expand("~/.vim/autoload/plug.vim"))
 
